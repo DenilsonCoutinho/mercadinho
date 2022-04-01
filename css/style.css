@@ -104,19 +104,39 @@ nav ul li .login button {
   padding-bottom: 5px;
   width: 225px;
   opacity: 0;
-  transition: ease-in 900ms;
+  transition: ease-in 500ms;
 }
 
 .login.active {
   display: block;
-  transition: ease-in 900ms;
   top: 72px;
   opacity: 1;
 }
 
 .list {
   position: absolute;
-  display: none;
+  width: 200px;
+  background-color: #fff;
+  transition: ease-in 500ms;
+  z-index: 1;
+  top: -50%;
+  right: 190px;
+  opacity: 0;
+}
+
+.list ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.list ul li {
+  padding-right: 100px;
+  padding-bottom: 10px;
+}
+
+.list.active {
+  top: 72px;
+  opacity: 1;
 }
 
 nav .itens {
@@ -218,6 +238,11 @@ ul .itens {
   object-fit: cover;
 }
 
+@media (max-width: 1307px) {
+  nav {
+    flex-direction: column;
+  }
+}
 @media (max-width: 1201px) {
   nav #Pesquisar {
     width: 400px;
@@ -255,10 +280,6 @@ ul .itens {
     width: 300px;
   }
 
-  nav {
-    flex-direction: column;
-  }
-
   .carousel-inner img {
     width: 400px;
   }
@@ -279,9 +300,16 @@ ul .itens {
     position: absolute;
     top: 122px;
     right: 190px;
+    border: 1px solid black;
   }
 }
 @media (max-width: 623px) {
+  nav ul li {
+    padding: 12px;
+    font-size: 13px;
+    font-family: sans-serif;
+  }
+
   .swiper {
     width: 400px;
     height: 300px;
@@ -302,6 +330,23 @@ ul .itens {
   nav #Pesquisar {
     width: 200px;
   }
+
+  .list {
+    position: absolute;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid black;
+    transition: ease-in 500ms;
+    z-index: 1;
+    top: -50%;
+    right: 70px;
+    opacity: 0;
+  }
+
+  .list.active {
+    top: 110px;
+    opacity: 1;
+  }
 }
 @media (max-width: 453px) {
   .swiper {
@@ -319,13 +364,13 @@ ul .itens {
 
   .login {
     position: absolute;
-    top: 122px;
+    top: 120px;
     right: 80px;
   }
 
   .login.active {
     position: absolute;
-    top: 122px;
+    top: 110px;
     right: 80px;
   }
 }
@@ -364,6 +409,39 @@ ul .itens {
     width: 70px;
     height: 70px;
     object-fit: cover;
+  }
+}
+@media (max-width: 328px) {
+  nav ul li {
+    padding: 12px;
+    font-size: 13px;
+    font-family: sans-serif;
+  }
+
+  nav #Pesquisar {
+    width: 180px;
+  }
+
+  .list {
+    position: absolute;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid black;
+    transition: ease-in 500ms;
+    z-index: 1;
+    top: -50%;
+    right: 70px;
+    opacity: 0;
+  }
+
+  .list.active {
+    top: 110px;
+    opacity: 1;
+  }
+
+  .login.active {
+    position: absolute;
+    top: 111px;
   }
 }
 
