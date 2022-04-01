@@ -11,7 +11,7 @@ body {
 nav {
   display: flex;
   align-items: center;
-  background-color: #941717;
+  background-color: rgba(148, 23, 23, 0.827);
 }
 
 nav .pesquisar {
@@ -142,7 +142,7 @@ ul .itens {
 }
 
 .carousel {
-  background-color: red;
+  background-color: #F05454;
 }
 
 .carousel-inner img {
@@ -166,6 +166,12 @@ ul .itens {
 
 .prod1 button {
   border-radius: 7px;
+  border: none;
+  background-color: #F05454;
+  font-weight: bold;
+  width: 80px;
+  height: 24px;
+  font-size: 12px;
 }
 
 .prod1 strong {
@@ -225,6 +231,16 @@ ul .itens {
   }
 }
 @media (max-width: 801px) {
+  .prod1 button {
+    border-radius: 7px;
+    border: none;
+    background-color: #F05454;
+    font-weight: bold;
+    width: 50px;
+    height: 20px;
+    font-size: 9px;
+  }
+
   nav #Pesquisar {
     width: 300px;
   }

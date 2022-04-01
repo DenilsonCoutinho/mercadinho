@@ -12,7 +12,7 @@ nav{
     display: flex;
     align-items: center;
   
-    background-color:rgb(148, 23, 23);
+    background-color:rgba(148, 23, 23, 0.827);
 
 }
 nav .pesquisar{
@@ -134,7 +134,7 @@ ul .itens{
     color:rgb(0, 0, 0);
 }
 .carousel{
-    background-color:rgb(255, 0, 0);
+    background-color:#F05454;
 }
 .carousel-inner img{
     margin: 0 auto;
@@ -156,6 +156,12 @@ ul .itens{
 } 
 .prod1 button{
     border-radius:7px;
+    border:none;
+    background-color:#F05454;
+   font-weight: bold;
+   width: 80px;
+   height: 24px;
+   font-size:12px;
 }
 .prod1 strong{
     color:rgb(255, 0, 0);
@@ -212,6 +218,15 @@ ul .itens{
       }
    }
    @media (max-width: 801px) {
+    .prod1 button{
+        border-radius:7px;
+        border:none;
+        background-color:#F05454;
+       font-weight: bold;
+       width: 50px;
+       height: 20px;
+       font-size:9px;
+    }
     nav #Pesquisar{
         width: 300px;
       }
