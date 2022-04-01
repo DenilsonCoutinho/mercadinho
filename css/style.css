@@ -114,6 +114,11 @@ nav ul li .login button {
   opacity: 1;
 }
 
+.list {
+  position: absolute;
+  display: none;
+}
+
 nav .itens {
   width: 17px;
   height: 15px;
@@ -162,6 +167,11 @@ ul .itens {
   border-radius: 13px;
   width: 100%;
   overflow: hidden;
+}
+
+.instantes {
+  text-align: center;
+  font-weight: bold;
 }
 
 .prod1 button {

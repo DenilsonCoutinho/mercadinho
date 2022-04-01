@@ -11,7 +11,7 @@ body {
 nav{
     display: flex;
     align-items: center;
-  
+   
     background-color:rgba(148, 23, 23, 0.827);
 
 }
@@ -109,6 +109,10 @@ nav ul li .login button {
     top: 72px;
     opacity: 1;
 }
+.list{
+    position: absolute;
+    display: none;
+}
 nav .itens{
     width: 17px;
     height: 15px;
@@ -134,6 +138,7 @@ ul .itens{
     color:rgb(0, 0, 0);
 }
 .carousel{
+    
     background-color:#F05454;
 }
 .carousel-inner img{
@@ -154,6 +159,10 @@ ul .itens{
     width: 100%;
     overflow: hidden;
 } 
+.instantes{
+    text-align: center;
+    font-weight: bold;
+}
 .prod1 button{
     border-radius:7px;
     border:none;
