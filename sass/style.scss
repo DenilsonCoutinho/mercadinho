@@ -270,6 +270,16 @@ ul .itens{
             .carousel-inner img{
                 width: 300px;
             }
+            .login{
+                position: absolute;
+                top:122px;
+                right: 80px;
+            }
+            .login.active{
+                position: absolute;
+                top: 122px;
+                right: 80px;
+            }
         }
         @media (max-width: 380px) {
             .login.active{
