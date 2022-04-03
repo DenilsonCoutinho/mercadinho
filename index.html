@@ -28,16 +28,7 @@
             </li>
           <li>
             
-           <a href="#" class="active-prod"> produtos &#711;</a>
-           <div class="list"><ul>
-             <li><a>Alimentos&#711; </a></li>
-             <li>Bebidas&#711;</li>
-             <li>Vegetais&#711;</li>
-             <li>Frutas&#711;</li>
-           </ul></div>
-          </li>
-            
-            <li>
+      
                 <a class="active-menu" href="#"> Login &#711;</a>
                 <div class="login">
                   <p>Email ou CPF/CNPJ</p>
@@ -50,13 +41,17 @@
                 </div>
             </li>
             <li>
-                <i class="fa-solid fa-cart-shopping">
+                <i id="car-active" class="fa-solid fa-cart-shopping">
                   <div class="itens"><p>0</p></div>
                 </i>
             </li>
             
         </ul>
     </nav>
+    <div class="car">
+      <h3>Carrinho</h3>
+      
+    </div>
     <div id="carouselExampleControls" class="carousel slide align-middle" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -88,10 +83,10 @@
       <div class="swiper mySwiper">
         
         <div class="swiper-wrapper">
-          <div class="swiper-slide"> <div class="prod1" id="">
+          <div class="swiper-slide"> <div class="prod1" id="arroz">
             <img src="produtos/arroz.png" width="200" alt="arroz">
                 <p>Arroz 2kg </p>
-                <button>COMPRAR</button>
+                <button onclick="addArroz()">COMPRAR</button>
                 <p><strong>5R$</strong></p>
         </div>
     </div>

@@ -104,34 +104,27 @@ nav ul li .login button {
     transition:ease-in 500ms;
 }
 .login.active{
-    display: block;
     top: 72px;
     opacity: 1;
 }
-.list{
+.car{
     position: absolute;
-    width: 200px;
+    width: 400px;
+    padding-bottom:455px;
     background-color: #fff;
     transition:ease-in 500ms;
-    z-index: 1;
-    top: -50%;
-    right: 190px;
+    z-index: 99;
+    top: -75%;
+    left: 0;
+    text-align: center;
+    border: 1px solid black;
     opacity: 0;
 }
-.list ul{
-    display: flex;
-    flex-direction: column;
-    
-}
-.list ul li{
-  padding-right: 100px;
-  padding-bottom: 10px;
-
-}
-.list.active{
+.car.active{
     top: 72px;
     opacity: 1;
 }
+
 nav .itens{
     width: 17px;
     height: 15px;
@@ -228,6 +221,12 @@ ul .itens{
     nav{
         flex-direction: column;
     }
+  
+  
+.car.active{
+    top: 122px;
+    opacity: 1;
+}
   }
   @media (max-width: 1201px) {
     nav #Pesquisar{
@@ -285,6 +284,7 @@ ul .itens{
         border: 1px solid black;
     }
    }
+
    @media (max-width: 623px) {
     nav ul li {
         padding: 12px;
@@ -308,23 +308,32 @@ ul .itens{
            nav #Pesquisar{
             width: 200px;
           }
-          .list{
+          .login.active{
             position: absolute;
-            width: 200px;
-            background-color: #fff;
+            top: 110px;
+            right: 190px;
             border: 1px solid black;
+        }
+        .car{
+            position: absolute;
+            width: 300px;
+            padding-bottom:455px;
+            background-color: #fff;
             transition:ease-in 500ms;
-            z-index: 1;
-            top: -50%;
-            right: 70px;
+            z-index: 99;
+            top: -75%;
+            left: 0;
+            text-align: center;
+            border: 1px solid black;
             opacity: 0;
         }
-        .list.active{
+        .car.active{
             top: 110px;
             opacity: 1;
-            
         }
         }
+
+       
         @media (max-width: 453px) {
             .swiper {
                 width: 380px;
@@ -347,17 +356,21 @@ ul .itens{
                 right: 80px;
             }
         }
+
         @media (max-width: 380px) {
             .login.active{
                 position: absolute;
-                top: 122px;
+                top: 110px;
                 left: 50px;
             }
             .swiper {
                 width: 360px;
                 height: 300px;
               }
+
+
         }
+
         @media (max-width: 360px) {
             .login{
                 position: absolute;
@@ -366,7 +379,7 @@ ul .itens{
             }
             .login.active{
                 position: absolute;
-                top: 122px;
+                top: 110px;
                 right: -30px;
                 
             }
@@ -381,6 +394,7 @@ ul .itens{
                 object-fit: cover;
               }
             }
+
             @media (max-width: 328px) {
                 nav ul li {
                     padding: 12px;
@@ -410,6 +424,6 @@ ul .itens{
                     .login.active{
                         position: absolute;
                         top: 111px;
-                        ;
+                        
                     }
                     }
