@@ -11,10 +11,63 @@ prod.addEventListener('click', ()=>{
 })
 
 function addArroz(){
-const arroz = document.getElementById('arroz')
-const addarroz = arroz.children[1].cloneNode(true)
-const arrozPosition = addarroz.children.length + 1
-addarroz.querySelector('.produtos').innerText = "produto" + arrozPosition + ""
-arroz.appendChild(addarroz)
-console.log(arroz.children)
+    const buy = document.querySelector('.prod1')
+    const newBuy = buy.children[0].cloneNode(true)
+    const car = document.querySelector('.purchase')
+    car.appendChild(newBuy)
+    
 }
+function addFeijao(){
+    const buy = document.querySelector("#feijao")
+    const newBuy = buy.children[0].cloneNode(true)
+    const car = document.querySelector('.purchase')
+    car.appendChild(newBuy)
+    
+    }
+    function addMacarrao(){
+        const buy = document.querySelector("#macarrao")
+        const newBuy = buy.children[0].cloneNode(true)
+        const car = document.querySelector('.purchase')
+        car.appendChild(newBuy)
+        
+        }
+        function addPringle(){
+              
+            const buy = document.querySelector("#pringle")
+            const newBuy = buy.children[0].cloneNode(true)
+            const car = document.querySelector('.purchase')
+            car.appendChild(newBuy)
+            
+            }
+            function addNutela(){
+              
+                const buy = document.querySelector("#nutela")
+                const newBuy = buy.children[0].cloneNode(true)
+                const car = document.querySelector('.purchase')
+                car.appendChild(newBuy)
+                
+                }
+                function addOreo(){
+              
+                    const buy = document.querySelector("#oreo")
+                    const newBuy = buy.children[0].cloneNode(true)
+                    const car = document.querySelector('.purchase')
+                    car.appendChild(newBuy)
+                    
+                    }
+                    function addClube(){
+              
+                        const buy = document.querySelector("#clube-social")
+                        const newBuy = buy.children[0].cloneNode(true)
+                        const car = document.querySelector('.purchase')
+                        car.appendChild(newBuy)
+                        
+                        }
+                        function addCream(){
+              
+                            const buy = document.querySelector("#creamcrack")
+                            const newBuy = buy.children[0].cloneNode(true)
+                            const car = document.querySelector('.purchase')
+                            car.appendChild(newBuy)
+                            
+                            }

@@ -12,6 +12,7 @@ nav{
     display: flex;
     align-items: center;
    
+  
     background-color:rgba(148, 23, 23, 0.827);
 
 }
@@ -110,7 +111,7 @@ nav ul li .login button {
 .car{
     position: absolute;
     width: 400px;
-    padding-bottom:455px;
+   
     background-color: #fff;
     transition:ease-in 500ms;
     z-index: 99;
@@ -120,9 +121,21 @@ nav ul li .login button {
     border: 1px solid black;
     opacity: 0;
 }
+
 .car.active{
     top: 72px;
     opacity: 1;
+}
+.car .purchase img{
+    width: 90px;
+}
+.car button{
+    width: 150px;
+    border-radius: 5px;
+    border:none;
+    background-color:black;
+    color:white;
+    font-size:12px;
 }
 
 nav .itens{
@@ -143,6 +156,7 @@ nav li .fa-solid{
     font-size: 17px;
     position: relative;
     top: 3px;
+    cursor: pointer;
 }
 ul .itens{
     text-align: center;
