@@ -188,20 +188,42 @@ ul .itens {
   text-align: center;
 }
 
-.prod1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 6px outset;
-  padding-bottom: 10px;
-  border-radius: 13px;
-  width: 100%;
-  overflow: hidden;
-}
-
 .instantes {
   text-align: center;
   font-weight: bold;
+  margin: 40px;
+}
+
+.slick {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.slick-prev::before {
+  content: attr();
+  color: red;
+}
+
+.slick-next::before {
+  content: attr();
+  color: red;
+  margin-bottom: 100px;
+}
+
+.prod1 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.prod1 .est {
+  border: 1px solid rgba(191, 117, 117, 0.205);
+  border-radius: 5px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.prod1 img {
+  margin: 0 auto;
 }
 
 .prod1 button {
@@ -218,39 +240,18 @@ ul .itens {
   color: red;
 }
 
-.swiper {
-  width: 1000px;
-  height: 500px;
-}
-
-.swiper-slide {
-  overflow: hidden;
-  text-align: center;
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 215px;
-  height: 215px;
-  object-fit: cover;
-}
-
 @media (max-width: 1307px) {
   nav {
     flex-direction: column;
+  }
+
+  .slick {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .slick .prod1 .est img {
+    max-width: 100%;
   }
 
   .car.active {
@@ -265,19 +266,6 @@ ul .itens {
 
   .img-promocao img {
     width: 300px;
-  }
-}
-@media (max-width: 1008px) {
-  .swiper {
-    width: 700px;
-    height: 300px;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
   }
 }
 @media (max-width: 801px) {
@@ -299,16 +287,9 @@ ul .itens {
     width: 400px;
   }
 
-  .swiper {
-    width: 600px;
-    height: 300px;
-  }
-
-  .swiper-slide img {
-    display: block;
+  .slick .prod1 .est img {
     width: 100px;
     height: 100px;
-    object-fit: cover;
   }
 
   .login.active {
@@ -325,21 +306,14 @@ ul .itens {
     font-family: sans-serif;
   }
 
-  .swiper {
-    width: 400px;
-    height: 300px;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-  }
-
   .prod1 {
     width: 113px;
     height: 200px;
+  }
+
+  .slick .prod1 .est img {
+    width: 80px;
+    height: 80px;
   }
 
   nav #Pesquisar {
@@ -372,13 +346,9 @@ ul .itens {
   }
 }
 @media (max-width: 453px) {
-  .swiper {
-    width: 380px;
-    height: 300px;
-  }
-
-  .img-promocao img {
-    width: 250px;
+  .slick .prod1 .est p {
+    font-size: 13px;
+    font-weight: bold;
   }
 
   .carousel-inner img {
@@ -398,15 +368,15 @@ ul .itens {
   }
 }
 @media (max-width: 380px) {
+  .slick .prod1 .est p {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
   .login.active {
     position: absolute;
     top: 110px;
     left: 50px;
-  }
-
-  .swiper {
-    width: 360px;
-    height: 300px;
   }
 }
 @media (max-width: 360px) {
@@ -420,18 +390,6 @@ ul .itens {
     position: absolute;
     top: 110px;
     right: -30px;
-  }
-
-  .swiper {
-    width: 100%;
-    height: 250px;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
   }
 }
 @media (max-width: 328px) {
