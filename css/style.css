@@ -114,7 +114,6 @@ nav ul li .login button {
 
 .car {
   position: absolute;
-  width: 350px;
   background-color: #fff;
   transition: ease-in 500ms;
   z-index: 99;
@@ -128,6 +127,14 @@ nav ul li .login button {
 .car.active {
   top: 72px;
   opacity: 1;
+}
+
+.purchase {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 400px;
 }
 
 .car .purchase img {
